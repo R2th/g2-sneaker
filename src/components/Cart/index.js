@@ -4,7 +4,7 @@ import CartItems from "../CartItems";
 const Cart = ({ data, setData, setIsSthRemove }) => {
   return (
     <div className="cart-items">
-      {data ? (
+      {data.length ? (
         data.map((item) => (
           <CartItems
             data={item}
